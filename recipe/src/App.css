@@ -28,11 +28,5 @@
   to { transform: rotate(360deg); }
 }
 
-.landing-page {
-  background-image: url(https://source.unsplash.com/random/1920x1080?food);
-  height: 100%;
-}
 
-.search-bar {
-  padding-top: 40vh;
-}
+

@@ -1,0 +1,15 @@
+.landing-page {
+    background-image: url(https://source.unsplash.com/random/1920x1080?food);
+    height: 100%;
+}
+  
+.search-bar {
+    padding-top: 40vh;
+}
+
+.advanced-link {
+    color: red;
+    float: right;
+    font-size: 1.5em;
+    padding-top: .2em;
+  }
