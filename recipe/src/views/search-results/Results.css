@@ -1,3 +1,8 @@
 .search-header {
-    padding-top: 5vh;
+    justify-content: flex-start;
+    
+    display: flex;
+}
+
+.search-dropdown {
 }

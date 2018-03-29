@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
-import {Header} from 'semantic-ui-react';
+import { Segment,Header, Dropdown } from 'semantic-ui-react';
+import './Results.css';
 export default class Results extends Component {
+  constructor(props) {
+    super(props);
+    this.drowdownOptions = [{ text: "Ingredients", value: 'ingredients' }, { text: "Title", value: 'title' }, { text: "Tags", value: 'tags' }];
+  }
   render() {
     return (
-      <Header as="h1" icon="search" className="search-header"></Header>
+      <div>
+        <Segment color="red" inverted>
+        <Header inverted as="h1">Recipe Advanced Search</Header>
+        </Segment>
+        <Header as="h3" className="search-header">
+          <label>Category</label>
+          <Dropdown placeholder="Select Search Category" selection options={this.drowdownOptions} defaultValue="0">
+          </Dropdown>
+        </Header>
+
+      </div>
+
     )
   }
 }
